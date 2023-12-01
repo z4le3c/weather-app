@@ -26,8 +26,12 @@ Weather.currFeelsLike = (data) => {
   return {c:data.current.feelslike_c, f:data.current.feelslike_f}
 }
 
+Weather.locName = (data) => {
+  return data.location.name
+}
+
 Weather.localTime = (data) => {
-  return data.location.localTime
+  return data.location.localtime
 }
 
 Weather.isDay = (data) => {
